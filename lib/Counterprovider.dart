@@ -8,4 +8,11 @@ class Counterprovider extends ChangeNotifier{
     numbers.add(numbers.last+1);
     notifyListeners();
   }
+  void minus(){
+   if(numbers.isNotEmpty)
+   {
+    numbers.removeLast();
+    notifyListeners();
+   }
 } 
+}
